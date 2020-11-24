@@ -1,0 +1,16 @@
+Model for platform independence:
+
+	void FunctionName(int arguments)
+	{
+	#if defined(_WIN32) || defined(_WIN64)
+		WindowsFunctionName(arguments)
+	#elif defined(OS_LINUX)
+		LinuxFunctionName(arguments)
+	#endif
+	}
+
+Round 2 - Program name, OS name, window title, data logging.  All .h and .cpp files.  Finished with Windows.  Finished with Linux.
+
+Round 3 - Sleep function.  Works for Windows.  Works for Linux.
+
+Round 4 - Keep_running loop.  See SystemProgramming.  Use one call to set interrupt. Windows first...

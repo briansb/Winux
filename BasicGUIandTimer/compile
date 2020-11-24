@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# g++ $1.cpp `wx-config --cxxflags --libs std` -o $1
+
+g++ MyApp.cpp MyFrame.cpp `wx-config --cxxflags --libs std` -o BasicGUIandTimer

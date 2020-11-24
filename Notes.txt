@@ -1,0 +1,16 @@
+command line arguments
+	argc - number of total arguments
+		first argument is hidden = full path of executable
+	so...
+		argc = 1
+		argv[0] = full path of executable
+
+		argc = 2
+		argv[0] = full path of executable
+		argv[1] = first "visible" argument
+
+Windows:
+	to start stressor in minimized window,
+		start /min cpu_stressor.exe param1 param2 ...
+	from app,
+		ShowWindow(GetConsoleWindow(), SW_MINIMIZE);

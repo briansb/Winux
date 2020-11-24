@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./stressor &
+./stressor &
+./stressor &
+
